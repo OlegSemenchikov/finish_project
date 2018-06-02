@@ -1,0 +1,210 @@
+@import "variables";
+
+.header{
+  &-background{
+    background: $header__background;
+  }
+  &__text-color{
+    color: $header__text-color;
+  }
+  &__nav{
+    width: 1000px;
+    height: 100px;
+    text-align: center;
+  }
+  &__item{
+    list-style: none;
+    text-transform: uppercase;
+    font-family: Bazar;
+    color: $header__text-color;
+    font-size: 24px;
+    margin: 0 25px;
+    position: relative;
+    text-decoration: none;
+    top: 35px;
+    &:hover{
+      text-decoration: none;
+      color: $header__text-color+#333333;
+    }
+    &-img{
+      width: 150px;
+      height: 150px;
+      position: relative;
+      top:-10px;
+    }
+  }
+  &__banner{
+    &-text{
+      font-family:  SeasideResortNF;
+      text-transform: uppercase;
+      color: $header__text-color;
+      text-align: center;
+      font-size: 120px;
+      text-shadow: 5px 0 0 $section__text-color-dark;
+    }
+  }
+  &__label{
+    font-family: Bazar;
+    color:  $section__text-color-dark;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+    margin: 8px 0;
+    &-wrapper{
+      width: 750px;
+      margin-top: 15px;
+    }
+    &-front{
+      background-color:  $header__text-color;
+      box-shadow: 5px 9px 20px 0 rgba(0, 0, 0, 0.3);
+      width: 400px;
+      height: 50px;
+      z-index: 1;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        border-left: 25px solid transparent;
+        border-top: 10px solid #6b7577;
+        top: 50px;
+        left: 0;
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        border-right: 25px solid transparent;
+        border-top: 10px solid #6b7577;
+        top: 50px;
+        right: 0;
+      }
+    }
+    &-left{
+      background-color:  $header__text-color;
+      width: 60px;
+      height: 50px;
+      position: relative;
+      top: 10px;
+      right: -25px;
+      &:before{
+        content: '';
+        position: absolute;
+        border: 25px solid transparent;
+        border-left: 20px solid $header__background;
+        top: 0;
+        left: 0;
+      }
+    }
+    &-right{
+      background-color:  $header__text-color;
+      width: 60px;
+      height: 50px;
+      position: relative;
+      top: 10px;
+      left: -25px;
+      &:after{
+        content: '';
+        position: absolute;
+        border: 25px solid transparent;
+        border-right: 20px solid $header__background;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+  &__border{
+    &-top {
+      border-top: 1px #A8A498 dashed;
+      height: 4px;
+      width: 100%;
+    }
+    &-bottom {
+      border-bottom: 1px #A8A498 dashed;
+      height: 4px;
+      width: 100%;
+    }
+  }
+  &__point{
+    border-radius: 50%;
+    background:  $header__text-color;
+    width: 6px;
+    height: 6px;
+    position: relative;
+    margin-top: 22px;
+    z-index: 1;
+    &-left{
+      margin-left: 5px;
+      right: -40px;
+    }
+    &-right{
+      margin-right: 5px;
+      left: -40px;
+    }
+  }
+  &__circle{
+    border-radius: 50%;
+    background-color: #fbfaf6;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 185px;
+    &-left {
+      left: -28px;
+    }
+    &-right {
+      right: -28px;
+    }
+  }
+  &__carousel{
+    border-radius: 4px;
+    background-color:  #fbfaf6;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.3);
+    max-width: 920px;
+    max-height: 460px;
+    margin-top: 55px;
+    position: relative;
+    overflow: hidden;
+
+    &-item{
+      max-width: 900px;
+      max-height: 410px;
+      margin: 10px;
+    }
+  }
+  &__text{
+    font-family: Bazar;
+    text-transform: uppercase;
+    text-align: center;
+    &-block{
+      margin: 25px 0 45px;
+    }
+  }
+}
+.menu-flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+@media screen and (max-width: 980px) {
+  .header__item {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+  .blog__comment {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+}
+@media screen and (max-width: 720px) {
+  .header__item {
+    font-size: 8px;
+    margin: 0 5px;
+  }
+  .blog__subtitle, .blog__postsubtitle {
+    display: none;
+  }
+  .section__column {
+    width: 48%;
+  }
+}

@@ -1,0 +1,12 @@
+.bubble-sorting{
+  text-transform: uppercase;
+  font-family: Oswald;
+  color: $header__text-color;
+  font-size: 26px;
+  margin-bottom: 100px;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: $header__text-color+#333333;
+  }
+}

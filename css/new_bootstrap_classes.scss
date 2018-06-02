@@ -1,0 +1,30 @@
+.carousel.fade{
+  opacity: 1;
+}
+.carousel.fade .item{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0.5;
+  transition: opacity 1.2s;
+  z-index: 0;
+}
+.carousel.fade .item.active{
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}
+.carousel-control-prev {
+  left: -50px;
+}
+.carousel-control-next {
+  right: -50px;
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.carousel-control-prev-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}

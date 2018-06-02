@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass css/style.scss -o build/styles",
+    "min": "minify -o build/result.min.css build/styles/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "reset": "^0.1.0",
+    "reset-css": "^3.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "minifier": "latest"
+  }
+}

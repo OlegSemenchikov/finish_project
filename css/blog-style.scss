@@ -1,0 +1,61 @@
+@import "variables";
+
+.blog{
+  &__item{
+    min-height: 250px;
+  }
+  &-wrapper{
+    max-width: 920px;
+  }
+  &__img{
+    max-width: 290px;
+    max-height: 240px;
+    padding: 5px;
+    &-wrapper{
+      border-radius: 3px;
+      background-color:  #fbfaf6;
+      box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.3);
+      max-width: 300px;
+      max-height: 250px;
+      float: left;
+      margin-right: 20px;
+    }
+  }
+  &__title{
+    font-family: RobotoSlab;
+    color:  $section__text-color-dark;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+  }
+  &__subtitle{
+    font-family: Oswald;
+    text-transform: uppercase;
+    color:  $section__text-color-dark;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: left;
+    float: left;
+  }
+  &__postsubtitle{
+    @extend .blog__subtitle;
+    float: right;
+  }
+  &__separator{
+    background-color:  $section__text-color-dark;
+    width: 40px;
+    height: 2px;
+    margin-top: 30px;
+    margin-left: 320px;
+    position: relative;
+
+  }
+  &__comment{
+    font-family: RobotoSlab;
+    color:  $section__text-color-dark;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 15px;
+    line-height: 30px;
+  }
+}
