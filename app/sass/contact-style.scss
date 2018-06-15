@@ -1,0 +1,38 @@
+@import "variables";
+
+.contact{
+  &-wrapper{
+    max-width: 460px;
+  }
+  &__item{
+    border-radius: 3px;
+    border: none;
+    background-color:  #ffffff;
+    width: 99%;
+    height: 35px;
+    margin: 10px 0;
+    font-family: RobotoSlab;
+    color:  #aaa9a9;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 8px;
+    &-message{
+      height: 150px;
+      resize: none;
+      padding-top: 8px;
+    }
+  }
+  &__button{
+    border-radius: 3px;
+    border: none;
+    background-color:  #fcfaf7;
+    width: 140px;
+    height: 35px;
+    font-family: RobotoSlab;
+    color:  $section__text-color-dark;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 15px;
+  }
+}

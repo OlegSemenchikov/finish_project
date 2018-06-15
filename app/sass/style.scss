@@ -1,0 +1,46 @@
+@import "../../node_modules/reset-css/sass/reset";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "support_styles";
+@import "variables";
+@import "header-style";
+@import "section-style";
+@import "column-style";
+@import "portfolio-style";
+@import "blog-style";
+@import "contact-style";
+@import "social-style";
+@import "../bubble_sorting/bubble_sorting-style";
+@import "new_bootstrap_classes";
+@import "burger-menu";
+@import "media-style";
+
+@font-face {
+  font-family: 'Bazar';
+  src: url('../fonts/Bazar.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/Oswald-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url('../fonts/RobotoSlab-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SeasideResortNF';
+  src: url('../fonts/SeasideResortNF.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Jura';
+  src: url('../fonts/Jura.ttf');
+  font-weight: 400;
+  font-style: normal;
+}

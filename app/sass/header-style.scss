@@ -1,0 +1,261 @@
+@import "variables";
+
+.header{
+  &-background{
+    background: url(../img/header-background.png);
+  }
+  &__text-color{
+    color: $header__text-color;
+  }
+  &__nav{
+    width: 1000px;
+    height: 110px;
+    text-align: center;
+  }
+  &__item{
+    text-transform: uppercase;
+    font-family: Bazar;
+    color: $header__text-color;
+    font-size: 24px;
+    margin: 0 25px;
+    position: relative;
+    text-decoration: none;
+    top: 40px;
+    &:hover{
+      text-decoration: none;
+      color: $header__text-color+#333333;
+    }
+    &-img{
+      width: 150px;
+      height: 150px;
+      position: relative;
+      animation: logo-rotate 20s infinite;
+      &:hover{
+        animation-play-state: paused;
+      }
+    }
+  }
+  &__banner{
+    margin-top: 40px;
+    position: relative;
+    animation: banner 1s;
+    &-text{
+      font-family:  SeasideResortNF;
+      text-transform: uppercase;
+      color: $header__text-color;
+      text-align: center;
+      font-size: 120px;
+      text-shadow: 5px 0 0 $section__text-color-dark;
+    }
+  }
+  &__label{
+    font-family: Bazar;
+    color:  $section__text-color-dark;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+    margin: 8px 0;
+    &-wrapper{
+      position: relative;
+      width: 750px;
+      margin-top: 35px;
+      animation: label 1s;
+    }
+    &-front{
+      background-color:  $header__text-color;
+      box-shadow: 5px 9px 20px 0 rgba(0, 0, 0, 0.3);
+      width: 350px;
+      height: 50px;
+      z-index: 1;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        border-left: 25px solid transparent;
+        border-top: 10px solid #6b7577;
+        top: 50px;
+        left: 0;
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        border-right: 25px solid transparent;
+        border-top: 10px solid #6b7577;
+        top: 50px;
+        right: 0;
+      }
+    }
+    &-left{
+      background-color:  $header__text-color;
+      width: 60px;
+      height: 50px;
+      position: relative;
+      top: 10px;
+      right: -25px;
+      &:before{
+        content: '';
+        position: absolute;
+        border: 25px solid transparent;
+        border-left: 20px solid $header__background;
+        top: 0;
+        left: 0;
+      }
+    }
+    &-right{
+      background-color:  $header__text-color;
+      width: 60px;
+      height: 50px;
+      position: relative;
+      top: 10px;
+      left: -25px;
+      &:after{
+        content: '';
+        position: absolute;
+        border: 25px solid transparent;
+        border-right: 20px solid $header__background;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+  &__border{
+    &-top {
+      border-top: 1px #A8A498 dashed;
+      height: 4px;
+      width: 100%;
+    }
+    &-bottom {
+      border-bottom: 1px #A8A498 dashed;
+      height: 4px;
+      width: 100%;
+    }
+  }
+  &__point{
+    border-radius: 50%;
+    background:  $header__text-color;
+    width: 6px;
+    height: 6px;
+    position: relative;
+    margin-top: 22px;
+    z-index: 1;
+    box-shadow: .5px .5px 0 0 rgba(0, 0, 0, 0.3);
+    &-left{
+      margin-left: 5px;
+      right: -40px;
+    }
+    &-right{
+      margin-right: 5px;
+      left: -40px;
+    }
+  }
+  &__circle{
+    border-radius: 50%;
+    background-color: #fbfaf6;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 185px;
+    &-left {
+      left: -28px;
+    }
+    &-right {
+      right: -28px;
+    }
+  }
+  &__carousel{
+    border-radius: 4px;
+    background-color:  #fbfaf6;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.3);
+    max-width: 920px;
+    max-height: 460px;
+    margin-top: 55px;
+    position: relative;
+    overflow: hidden;
+
+    &-item{
+      max-width: 900px;
+      max-height: 410px;
+      margin: 10px;
+    }
+  }
+  &__text{
+    font-family: Bazar;
+    text-transform: uppercase;
+    text-align: center;
+    &-block{
+      margin: 25px 0 45px;
+    }
+  }
+}
+.menu {
+  &-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  &__button {
+    background: url('http://icons.iconarchive.com/icons/iron-devil/ids-3d-icons-20/32/Hamburger-icon.png');
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    display: none;
+  }
+  &__nav {
+    position: absolute;
+    background: none;
+    top: 80px;
+    left: 5%;
+    background: $section__text-color-dark;
+    z-index: 3;
+    border-radius: 5px;
+    display: none;
+
+  }
+  &__item{
+    text-transform: uppercase;
+    font-family: Bazar;
+    color: $header__text-color;
+    font-size: 24px;
+    margin: 10px 20px;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+      color: $header__text-color+#333333;
+    }
+  }
+}
+
+@keyframes logo-rotate {
+  0%,100%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(-360deg);
+  }
+}
+@keyframes banner {
+  0%{
+    left:-5000px;
+  }
+  90%{
+    left: 50px;
+  }
+  100%{
+    left: 0;
+  }
+}
+@keyframes label {
+  0%{
+    left: 5000px;
+  }
+  90%{
+    left: -50px;
+  }
+  100%{
+    left: 0;
+  }
+}
+
+

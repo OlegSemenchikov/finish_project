@@ -1,0 +1,122 @@
+@media screen and (max-width: 980px) {
+  .header {
+    &__item {
+    font-size: 16px;
+    margin: 0 10px;
+    display: none;
+    }
+    &__carousel{
+      display: none;
+    }
+  }
+
+  .blog{
+    &__comment {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    }
+    &__postsubtitle {
+      margin-right: 2%;
+    }
+  }
+
+  .burger-icon{
+    display: initial;
+  }
+  .section__column {
+    width: 48%;
+  }
+  .column__comment{
+    text-align: center;
+  }
+  .portfolio__filter-label{
+      width: 100px;
+    }
+  .menu-visible {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .section__column {
+    width: 80%;
+  }
+  .google-map{
+    width: 400px;
+  }
+  .portfolio{
+    &-wrapper{
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &__img{
+      width: 400px;
+      height: 330px;
+      margin: 5px;
+      &-wrapper {
+      float: none;
+      width: 410px;
+      height: 405px;
+      margin: 10px;
+      }
+    }
+    &__sprite {
+      margin-top: -45px;
+      margin-left: 164px;
+      margin-bottom: 10px;
+      transform: scale(0.6);
+    }
+  }
+  .body-wrapper{
+    overflow-x: auto;
+    min-width: 555px;
+  }
+  .blog {
+    &-wrapper{
+      width: 80%;
+    }
+    &__postsubtitle {
+      display: none;
+    }
+    &__subtitle{
+      display: none;
+    }
+    &__item{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &__img {
+      max-width: 490px;
+      max-height: 440px;
+      &-wrapper {
+        max-width: 500px;
+        max-height: 450px;
+        margin-right: 0;
+        margin-bottom: 30px;
+        margin-top: 50px;
+        float: none;
+      }
+    }
+    &__separator{
+      margin-top: 10px;
+      margin-left: 0;
+    }
+    &__comment{
+      text-align: center;
+      margin-top: 15px;
+    }
+  }
+}

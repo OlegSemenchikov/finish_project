@@ -1,0 +1,57 @@
+@import "variables";
+
+.column {
+  &__title {
+    font-family: Bazar;
+    color: $section__text-color-dark;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+  }
+  &__subtitle {
+    font-family: RobotoSlab;
+    color: $section__text-color-dark;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+  }
+  &__separator {
+    background-color: $section__text-color-dark;
+    width: 40px;
+    height: 3px;
+    margin-top: 10px;
+  }
+  &__comment {
+    font-family: RobotoSlab;
+    color: $section__text-color-dark;
+    font-size: 14px;
+    text-align: left;
+    line-height: 25px;
+    margin-top: 10px;
+  }
+  &__sprite {
+    background-image: url(../img/sprite-columns.png);
+    background-repeat: no-repeat;
+    transform: scale(0.6);
+    &-tv {
+      background-position: 0 0;
+      width: 171px;
+      height: 131px;
+    }
+    &-vinyl {
+      background-position: -201px 0;
+      width: 171px;
+      height: 171px;
+    }
+    &-shirt {
+      background-position: -401px 0;
+      width: 170px;
+      height: 149px;
+    }
+    &-food {
+      background-position: -601px 0;
+      width: 170px;
+      height: 170px;
+    }
+  }
+}

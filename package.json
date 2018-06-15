@@ -1,20 +1,37 @@
 {
+  "name": "finish_project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass css/style.scss -o build/styles",
-    "min": "minify -o build/result.min.css build/styles/style.css"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlegSemenchikov/finish_project.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlegSemenchikov/finish_project/issues"
+  },
+  "homepage": "https://github.com/OlegSemenchikov/finish_project#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglifyjs": "^0.6.2",
+    "imagemin-pngquant": "^5.1.0"
+  },
   "dependencies": {
     "bootstrap": "^4.1.1",
-    "reset": "^0.1.0",
-    "reset-css": "^3.0.0"
-  },
-  "devDependencies": {
-    "node-sass": "^4.7.2",
-    "minifier": "latest"
+    "reset-css": "^4.0.1"
   }
 }
